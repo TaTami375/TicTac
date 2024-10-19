@@ -55,7 +55,7 @@ namespace TicTacToe
         private void pictureBox22_Click(object sender, EventArgs e)
         {
             
-        }
+        } 
 
         private void pictureBox32_Click(object sender, EventArgs e)
         {
