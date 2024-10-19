@@ -34,51 +34,68 @@ namespace TicTacToe
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox11);
         }
 
         private void pictureBox21_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox21);
         }
 
         private void pictureBox31_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox31);
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox12);
         }
 
         private void pictureBox22_Click(object sender, EventArgs e)
         {
-            
-        } 
+            MakeMove(pictureBox22);
+        }
 
         private void pictureBox32_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox32);
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox13);
         }
 
         private void pictureBox23_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox23);
         }
 
         private void pictureBox33_Click(object sender, EventArgs e)
         {
-            
+            MakeMove(pictureBox33);
         }
 
-        
+        private void MakeMove(PictureBox cell)
+        {
+            if (first)
+            {
+                cell.Image = Tic;
+                first = false;
+            }
+            else
+            {
+                cell.Image = Tac;
+                first = true;
+            }
 
-        
+            cell.SizeMode = PictureBoxSizeMode.StretchImage;
+            cell.Enabled = false;
+        }
+
+
+
+
     }
 }
