@@ -92,6 +92,8 @@ namespace TicTacToe
 
             cell.SizeMode = PictureBoxSizeMode.StretchImage;
             cell.Enabled = false;
+            ChekWin();
+            ChekDraw();
         }
 
         private void ClearField()
@@ -148,6 +150,17 @@ namespace TicTacToe
                     MessageBox.Show("Победа ноликов");
                     ClearField();
                 }
+            }
+        }
+
+        private void ChekDraw()
+        {
+            if ((!pictureBox11.Enabled && !pictureBox12.Enabled && !pictureBox13.Enabled &&
+                !pictureBox21.Enabled && !pictureBox22.Enabled && !pictureBox23.Enabled &&
+                !pictureBox31.Enabled && !pictureBox32.Enabled && !pictureBox33.Enabled))
+            {
+                MessageBox.Show(this, "Ниичья");
+                ClearField();
             }
         }
     }
