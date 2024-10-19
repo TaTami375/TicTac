@@ -94,7 +94,28 @@ namespace TicTacToe
             cell.Enabled = false;
         }
 
-
+        private void ClearField()
+        {
+            pictureBox11.Image = null;
+            pictureBox12.Image = null;
+            pictureBox13.Image = null;
+            pictureBox21.Image = null;
+            pictureBox22.Image = null;
+            pictureBox23.Image = null;
+            pictureBox31.Image = null;
+            pictureBox32.Image = null;
+            pictureBox33.Image = null;
+            pictureBox11.Enabled = true;
+            pictureBox12.Enabled = true;
+            pictureBox13.Enabled = true;
+            pictureBox21.Enabled = true;
+            pictureBox22.Enabled = true;
+            pictureBox23.Enabled = true;
+            pictureBox31.Enabled = true;
+            pictureBox32.Enabled = true;
+            pictureBox33.Enabled = true;
+            first = true;
+        }
 
 
     }
